@@ -1,3 +1,5 @@
+using UzTexGroup.Api.Extensions;
+
 namespace UzTexGroup.Api
 {
     public class Program
@@ -7,6 +9,7 @@ namespace UzTexGroup.Api
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            builder.Services.AddDbContexts(builder.Configuration);
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
