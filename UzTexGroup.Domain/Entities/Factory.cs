@@ -14,5 +14,6 @@ public class Factory
 
     public Address? Address { get; set; }
     public ICollection<Jobs> Jobs { get; set; }
+    public ICollection<FactoryImages> Images { get; set; }
 
 }
