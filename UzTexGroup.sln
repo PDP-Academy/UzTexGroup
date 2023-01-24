@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UzTexGroup.Api", "UzTexGrou
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UzTexGroup.Domain", "UzTexGroup.Domain\UzTexGroup.Domain.csproj", "{FE30556C-E004-40AE-B3EB-701D19A6749D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UzTexGroup.Infrastructure", "UzTexGroup.Infrastructure\UzTexGroup.Infrastructure.csproj", "{FA5E7D36-8073-4DB5-A88B-89D4FD973909}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UzTexGroup.Application", "UzTexGroup.Application\UzTexGroup.Application.csproj", "{D953EC87-B167-4DB5-AF02-3ADCA7D71CBB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{FE30556C-E004-40AE-B3EB-701D19A6749D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE30556C-E004-40AE-B3EB-701D19A6749D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE30556C-E004-40AE-B3EB-701D19A6749D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA5E7D36-8073-4DB5-A88B-89D4FD973909}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA5E7D36-8073-4DB5-A88B-89D4FD973909}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA5E7D36-8073-4DB5-A88B-89D4FD973909}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA5E7D36-8073-4DB5-A88B-89D4FD973909}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D953EC87-B167-4DB5-AF02-3ADCA7D71CBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D953EC87-B167-4DB5-AF02-3ADCA7D71CBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D953EC87-B167-4DB5-AF02-3ADCA7D71CBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D953EC87-B167-4DB5-AF02-3ADCA7D71CBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
