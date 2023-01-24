@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace UzTexGroup.Domain.Entities;
 
-namespace UzTexGroup.Domain.Entities
+public class Address
 {
-    internal class Address
-    {
-    }
+    public Guid Id { get; set; }
+    public string Country { get; set; }
+    public string Region { get; set; }
+    public string District { get; set; }
+    public string Street { get; set; }
+    public short PostalCode { get; set; }
 }
