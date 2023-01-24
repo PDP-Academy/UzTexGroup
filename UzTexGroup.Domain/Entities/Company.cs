@@ -8,10 +8,4 @@ public class Company
     public int ExportingCountriesCount { get; set; }
     public Guid AboutCompanyId { get; set; }
     public AboutCompanies? AboutCompany { get; set; }
-
-namespace UzTexGroup.Domain.Entities
-{
-    internal class Company
-    {
-    }
 }
