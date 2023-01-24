@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace UzTexGroup.Domain.Entities
+﻿namespace UzTexGroup.Domain.Entities;
+public class Company
 {
-    internal class Company
-    {
-    }
+    public Guid Id { get; set; }    
+    public string CompanyName { get; set; }
+    public DateTime FoundedDate { get; set; }
+    public int EmployeeCount { get; set; }
+    public int ExportingCountriesCount { get; set; }
+    public Guid AboutCompanyId { get; set; }
 }
