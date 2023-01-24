@@ -7,5 +7,5 @@ public class Company
     public int EmployeeCount { get; set; }
     public int ExportingCountriesCount { get; set; }
     public Guid AboutCompanyId { get; set; }
-    public ICollection<Factory> Factories { get; set; }
+    public AboutCompanies? AboutCompany { get; set; }
 }

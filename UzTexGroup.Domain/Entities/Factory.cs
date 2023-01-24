@@ -8,9 +8,9 @@ public class Factory
 
     public Guid CompanyId { get; set; }
 
-    public Company Company { get; set; }
+    public Company? Company { get; set; }
 
     public Guid AddressId { get; set; }
 
-    public Address Address { get; set; }
+    public Address? Address { get; set; }
 }
