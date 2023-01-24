@@ -8,5 +8,5 @@ public class Jobs
     public decimal Salary { get; set; }
     public string Requirement { get; set; }
     public Guid FactoryId { get; set; }
-    public Factory Factories { get; set; }
+    public Factory Factory { get; set; }
 }
