@@ -348,3 +348,5 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+UzTexGroup.Domain/Entities/AboutCompany.cs
+UzTexGroup.Domain/Entities/AboutCompany.cs
