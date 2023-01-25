@@ -9,3 +9,5 @@ public class Company
     public AboutCompanies? AboutCompany { get; set; }
     public ICollection<Factory>? Factories { get; set; }
 }
+
+
