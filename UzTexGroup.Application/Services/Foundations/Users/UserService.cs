@@ -1,9 +1,10 @@
 ﻿using UzTexGroup.Application.DataTransferObjects;
 using UzTexGroup.Application.DataTransferObjects.User;
 using UzTexGroup.Application.Models;
+using UzTexGroup.Domain.Entities;
 using UzTexGroup.Infrastructure.Repositories;
 
-namespace UzTexGroup.Application.Services.Users;
+namespace UzTexGroup.Application.Services.Foundations.Users;
 
 public class UserService : IUserService
 {
@@ -14,27 +15,27 @@ public class UserService : IUserService
         this.userRepository = userRepository;
     }
 
-    public ValueTask<UserDto> CreateUserAsync(UserForCreationDto userForCreationDto)
+    public ValueTask<User> CreateUserAsync(User user)
     {
         throw new NotImplementedException();
     }
 
-    public ValueTask<UserDto> ModifyUserAsync(UserForModificationDto userForModificationDto)
+    public ValueTask<User> ModifyUserAsync(User user)
     {
         throw new NotImplementedException();
     }
 
-    public ValueTask<UserDto> RemoveUserAsync(Guid userId)
+    public ValueTask<User> RemoveUserAsync(Guid userId)
     {
         throw new NotImplementedException();
     }
 
-    public ValueTask<UserDto> RetrieveUserByIdAsync(Guid userId)
+    public ValueTask<User> RetrieveUserByIdAsync(Guid userId)
     {
         throw new NotImplementedException();
     }
 
-    public IQueryable<UserDto> RetrieveUsers(QueryParameter queryParameter)
+    public IQueryable<User> RetrieveUsers()
     {
         throw new NotImplementedException();
     }

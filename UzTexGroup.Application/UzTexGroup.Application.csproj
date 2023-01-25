@@ -10,4 +10,15 @@
     <ProjectReference Include="..\UzTexGroup.Infrastructure\UzTexGroup.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Services\Foundations\Company\" />
+    <Folder Include="Services\Foundations\Factory\" />
+    <Folder Include="Services\Foundations\FactoryImages\" />
+    <Folder Include="Services\Foundations\Jobs\" />
+    <Folder Include="Services\Foundations\Application\" />
+    <Folder Include="Services\Foundations\Address\" />
+    <Folder Include="Services\Foundations\AboutCompany\" />
+    <Folder Include="Services\Foundations\NewsImages\" />
+  </ItemGroup>
+
 </Project>

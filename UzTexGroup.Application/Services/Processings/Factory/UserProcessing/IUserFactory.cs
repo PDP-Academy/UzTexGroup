@@ -1,10 +1,10 @@
-﻿using UzTexGroup.Application.DataTransferObjects;
-using UzTexGroup.Application.DataTransferObjects.User;
+﻿using UzTexGroup.Application.DataTransferObjects.User;
+using UzTexGroup.Application.DataTransferObjects;
 using UzTexGroup.Application.Models;
 
 namespace UzTexGroup.Application.Services.Users;
 
-public interface IUserService
+public interface IUserFactory
 {
     ValueTask<UserDto> CreateUserAsync(UserForCreationDto userForCreationDto);
     IQueryable<UserDto> RetrieveUsers(QueryParameter queryParameter);
