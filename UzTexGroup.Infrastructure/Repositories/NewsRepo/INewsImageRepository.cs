@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using UzTexGroup.Domain.Entities;
 
-namespace UzTexGroup.Infrastructure.Repositories.NewsRepo
+namespace UzTexGroup.Infrastructure.Repositories;
+public interface INewsImageRepository : IGenericRepository<NewImages, Guid>
 {
-    internal interface Interface1
-    {
-    }
 }

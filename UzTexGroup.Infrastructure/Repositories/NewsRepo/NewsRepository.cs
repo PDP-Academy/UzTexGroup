@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace UzTexGroup.Infrastructure.Repositories.News
+﻿using UzTexGroup.Domain.Entities;
+using UzTexGroup.Infrastructure.DbContexts;
+namespace UzTexGroup.Infrastructure.Repositories;
+public class NewsRepository : GenericRepository<News, Guid>, INewsRepository
 {
-    internal class NewsRepository
+    public NewsRepository(UzTexGroupDbContext appDbContext) : base(appDbContext)
     {
-    }
+    } 
 }
