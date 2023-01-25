@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using UzTexGroup.Domain.Constants;
 using UzTexGroup.Domain.Entities;
 
 namespace UzTexGroup.Infrastructure.Configurations;
@@ -8,7 +9,7 @@ public class FactoryImagesConfiguration : IEntityTypeConfiguration<FactoryImages
 {
     public void Configure(EntityTypeBuilder<FactoryImages> builder)
     {
-        builder.ToTable("FactoryImages");
+        builder.ToTable(TableNames.FactoryImages);
 
         builder.HasKey(factoryImages => factoryImages.Id);
 
@@ -18,9 +19,7 @@ public class FactoryImagesConfiguration : IEntityTypeConfiguration<FactoryImages
 
         builder
             .HasOne(factoryImages => factoryImages.Factory)
-            .WithMany()
+            .WithMany(factory => factory.FactoryImages)
             .HasForeignKey(factoryImages => factoryImages.FactoryId);
-
-
     }
 }

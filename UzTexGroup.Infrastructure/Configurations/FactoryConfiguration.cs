@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using UzTexGroup.Domain.Constants;
 using UzTexGroup.Domain.Entities;
 
 namespace UzTexGroup.Infrastructure.Configurations;
@@ -8,7 +9,7 @@ public class FactoryConfiguration : IEntityTypeConfiguration<Factory>
 {
     public void Configure(EntityTypeBuilder<Factory> builder)
     {
-        builder.ToTable("Factory");
+        builder.ToTable(TableNames.Factory);
 
         builder.HasKey(factory => factory.Id);
 
