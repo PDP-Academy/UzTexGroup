@@ -8,7 +8,7 @@ public sealed class UserConfigurations : IEntityTypeConfiguration<User>
 {
     public void Configure(EntityTypeBuilder<User> builder)
     {
-        builder.ToTable(TableNames.Users);
+        builder.ToTable(TableNames.User);
 
         builder.HasKey(user => user.Id);
 
@@ -24,12 +24,12 @@ public sealed class UserConfigurations : IEntityTypeConfiguration<User>
 
         builder
             .Property(user => user.PasswordHash)
-            .HasMaxLength(255)
+            .HasMaxLength(200)
             .IsRequired(true);
 
         builder
             .Property(user => user.Salt)
-            .HasMaxLength(100)
+            .HasMaxLength(255)
             .IsRequired(true);
     }
 }

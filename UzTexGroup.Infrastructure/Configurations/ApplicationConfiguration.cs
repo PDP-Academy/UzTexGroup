@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿    using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using UzTexGroup.Domain.Constants;
 using UzTexGroup.Domain.Entities;
@@ -19,7 +19,7 @@ public class ApplicationConfiguration : IEntityTypeConfiguration<Application>
 
         builder
             .Property(app => app.TellNumber)
-            .HasMaxLength(255)
+            .HasMaxLength(30)
             .IsRequired(true);
 
         builder

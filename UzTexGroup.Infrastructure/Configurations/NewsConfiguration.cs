@@ -4,25 +4,56 @@ using UzTexGroup.Domain.Constants;
 using UzTexGroup.Domain.Entities;
 
 namespace UzTexGroup.Infrastructure.Configurations;
-public class NewsConfiguration : IEntityTypeConfiguration<News>
+public sealed class NewsConfiguration : IEntityTypeConfiguration<News>
 {
     public void Configure(EntityTypeBuilder<News> builder)
     {
-        builder.ToTable(name:TableNames.Address);
-        builder.HasKey(news => news.Id);
+        builder.ToTable(TableNames.News);
 
-        builder.Property(news => news.Title)
-            .IsRequired()
+        builder.HasKey(@news => @news.Id);
+
+        builder
+            .Property(news => news.TitleUz)
+            .IsRequired(true)
             .HasMaxLength(150);
 
-        builder.Property(news => news.Body)
-            .IsRequired();
+        builder
+            .Property(news => news.TitleUzC)
+            .IsRequired(false)
+            .HasMaxLength(150);
 
-        builder.Property(news => news.Date)
-            .IsRequired();
+        builder
+            .Property(news => news.TitleEn)
+            .IsRequired(false)
+            .HasMaxLength(150);
 
-        builder.HasMany(news => news.NewImages)
-            .WithOne(newsImage => newsImage.News)
-            .HasForeignKey(news => news.NewsId);
+        builder
+            .Property(news => news.TitleRu)
+            .IsRequired(false)
+            .HasMaxLength(150);
+
+        builder
+            .Property(news => news.BodyUz)
+            .IsRequired(true)
+            .HasMaxLength(150);
+
+        builder
+            .Property(news => news.BodyUzC)
+            .IsRequired(false)
+            .HasMaxLength(150);
+
+        builder
+            .Property(news => news.BodyEn)
+            .IsRequired(false)
+            .HasMaxLength(150);
+
+        builder
+            .Property(news => news.BodyRu)
+            .IsRequired(false)
+            .HasMaxLength(150);
+
+        builder
+            .Property(news => news.Date)
+            .IsRequired(true);
     }
 }

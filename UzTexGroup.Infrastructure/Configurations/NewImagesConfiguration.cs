@@ -14,7 +14,7 @@ public sealed class NewImagesConfiguration : IEntityTypeConfiguration<NewImages>
 
         builder
             .Property(newImage => newImage.ImageUrl)
-            .HasMaxLength(256)
+            .HasMaxLength(200)
             .IsRequired(true);
 
         builder

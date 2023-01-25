@@ -14,17 +14,47 @@ public sealed class AboutCompaniesConfigurations : IEntityTypeConfiguration<Abou
 
         builder
             .Property(aboutCompanies => aboutCompanies.TitleUz)
-            .HasMaxLength(70)
+            .HasMaxLength(100)
             .IsRequired(true);
 
         builder
-            .Property(aboutCompanies => aboutCompanies.image_Url)
-            .HasMaxLength(255)
+            .Property(aboutCompanies => aboutCompanies.TitleUzC)
+            .HasMaxLength(100)
+            .IsRequired(false);
+
+        builder
+            .Property(aboutCompanies => aboutCompanies.TitleRu)
+            .HasMaxLength(100)
+            .IsRequired(false);
+
+        builder
+            .Property(aboutCompanies => aboutCompanies.TitleEn)
+            .HasMaxLength(100)
+            .IsRequired(false);
+
+        builder
+            .Property(aboutCompanies => aboutCompanies.ImageUrl)
+            .HasMaxLength(100)
             .IsRequired(true);
 
         builder
             .Property(aboutCompanies => aboutCompanies.AboutCompanyUz)
-            .HasMaxLength(500)
+            .HasMaxLength(100)
             .IsRequired(true);
+
+        builder
+            .Property(aboutCompanies => aboutCompanies.AboutCompanyUzC)
+            .HasMaxLength(100)
+            .IsRequired(false);
+
+        builder
+            .Property(aboutCompanies => aboutCompanies.AboutCompanyEn)
+            .HasMaxLength(100)
+            .IsRequired(false);
+
+        builder
+            .Property(aboutCompanies => aboutCompanies.AboutCompanyRu)
+            .HasMaxLength(100)
+            .IsRequired(false);
     }
 }

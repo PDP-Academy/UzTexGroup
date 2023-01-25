@@ -13,22 +13,22 @@ public class AddressConfiguration : IEntityTypeConfiguration<Address>
         builder.HasKey(address => address.Id);
 
         builder.Property(address => address.Country)
-            .IsRequired()
+            .IsRequired(true)
             .HasMaxLength(50);
 
          builder.Property(address => address.Region)
-            .IsRequired()
+            .IsRequired(true)
             .HasMaxLength(50);
 
          builder.Property(address => address.District)
-            .IsRequired()
+            .IsRequired(false)
             .HasMaxLength(50);
 
          builder.Property(address => address.Street)
-            .IsRequired()
+            .IsRequired(false)
             .HasMaxLength(50);
 
          builder.Property(address => address.PostalCode)
-           .IsRequired();
+           .IsRequired(false);
     }
 }

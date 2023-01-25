@@ -27,8 +27,10 @@ public class JobConfiguration : IEntityTypeConfiguration<Jobs>
             .HasMaxLength(300)
             .IsRequired(true);
 
-        builder.HasOne(job => job.Factories)
+        builder
+            .HasOne(job => job.Factory)
             .WithMany(factory => factory.Jobs)
-            .HasForeignKey(job => job.FactoryId);
+            .HasForeignKey(job => job.FactoryId)
+            .OnDelete(DeleteBehavior.Cascade);
     }
 }
