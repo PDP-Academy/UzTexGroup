@@ -9,7 +9,7 @@ public class FactoryConfiguration : IEntityTypeConfiguration<Factory>
 {
     public void Configure(EntityTypeBuilder<Factory> builder)
     {
-        builder.ToTable(TableNames.Factory);
+        builder.ToTable(TableNames.Factories);
 
         builder.HasKey(factory => factory.Id);
 
@@ -22,7 +22,8 @@ public class FactoryConfiguration : IEntityTypeConfiguration<Factory>
         builder
             .HasOne(factory => factory.Address)
             .WithOne()
-            .HasForeignKey<Factory>(factory => factory.AddressId);
+            .HasForeignKey<Factory>(factory => factory.AddressId)
+            .OnDelete(DeleteBehavior.Cascade);
 
 
         builder

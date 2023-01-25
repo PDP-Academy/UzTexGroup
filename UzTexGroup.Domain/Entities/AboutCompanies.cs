@@ -12,5 +12,8 @@
         public string? AboutCompanyUzC { get; set; }
         public string? AboutCompanyEn { get; set; }
         public string? AboutCompanyRu { get; set; }
+
+        public Guid CompanyId { get; set; }
+        public Company Company { get; set; }
     }
 }

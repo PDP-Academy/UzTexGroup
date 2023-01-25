@@ -8,7 +8,7 @@ public class ApplicationConfiguration : IEntityTypeConfiguration<Application>
 {
     public void Configure(EntityTypeBuilder<Application> builder)
     {
-        builder.ToTable(TableNames.Application);
+        builder.ToTable(TableNames.Applications);
 
         builder.HasKey(application => application.Id);
 
@@ -42,6 +42,6 @@ public class ApplicationConfiguration : IEntityTypeConfiguration<Application>
             .HasOne(app => app.Job)
             .WithMany(job => job.Applications)
             .HasForeignKey(app => app.JobId)
-            .OnDelete(DeleteBehavior.Cascade);
+            .OnDelete(DeleteBehavior.NoAction);
     }
 }

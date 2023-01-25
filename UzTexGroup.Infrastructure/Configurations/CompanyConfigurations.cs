@@ -20,12 +20,6 @@ public sealed class CompanyConfigurations : IEntityTypeConfiguration<Company>
         builder
             .Property(company => company.FoundedDate)
             .IsRequired(true);
-
-        builder
-            .HasOne(company => company.AboutCompany)
-            .WithOne()
-            .HasForeignKey<Company>(company => company.AboutCompanyId)
-            .OnDelete(DeleteBehavior.Cascade);
     }
 }
 

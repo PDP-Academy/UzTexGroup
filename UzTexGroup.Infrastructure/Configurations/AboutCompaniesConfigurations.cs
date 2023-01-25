@@ -56,5 +56,10 @@ public sealed class AboutCompaniesConfigurations : IEntityTypeConfiguration<Abou
             .Property(aboutCompanies => aboutCompanies.AboutCompanyRu)
             .HasMaxLength(100)
             .IsRequired(false);
+
+        builder.HasOne<Company>(aboutCompany => aboutCompany.Company)
+            .WithOne(company => company.AboutCompany)
+            .HasForeignKey<AboutCompanies>(aboutCompany => aboutCompany.CompanyId)
+            .OnDelete(DeleteBehavior.Cascade);
     }
 }
