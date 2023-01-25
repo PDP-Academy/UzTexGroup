@@ -9,4 +9,6 @@ public class Jobs
     public string Requirement { get; set; }
     public Guid FactoryId { get; set; }
     public Factory Factory { get; set; }
+
+    public ICollection<Application> Applications { get; set; }
 }
