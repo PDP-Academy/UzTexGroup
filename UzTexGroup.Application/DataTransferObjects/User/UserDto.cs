@@ -1,6 +1,6 @@
 ﻿namespace UzTexGroup.Application.DataTransferObjects;
 
 public record UserDto(
-    Guid Id,
+    Guid id,
     string fullName,
     string email);
