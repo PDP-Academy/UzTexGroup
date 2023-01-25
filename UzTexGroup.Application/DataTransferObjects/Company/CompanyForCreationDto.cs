@@ -3,6 +3,7 @@ public record CompanyForCreationDto(
     string companyName,
     int? employeeCount,
     int? exportingCountriesCount,
+    DateTime foundedDate,
     string titleUz,
     string? titleUzc,
     string? titleEn,

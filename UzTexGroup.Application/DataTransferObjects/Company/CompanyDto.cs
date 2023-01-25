@@ -8,4 +8,4 @@ public record CompanyDto(
     int employeeCount,
     int exportCountryCount,
     AboutCompaniesDto? aboutCompanies,
-    ICollection<Factory> Factories);
+    ICollection<Factory>? Factories);

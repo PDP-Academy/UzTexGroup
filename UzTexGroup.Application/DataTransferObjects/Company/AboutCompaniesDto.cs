@@ -10,4 +10,4 @@ public record AboutCompaniesDto(
     string? aboutCompanyUzC,
     string? aboutCompanyEn,
     string? aboutCompanyRu,
-    Guid company_id);
+    Guid companyId);
