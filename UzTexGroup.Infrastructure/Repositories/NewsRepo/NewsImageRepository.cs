@@ -7,6 +7,6 @@ namespace UzTexGroup.Infrastructure.Repositories.NewsRepo
     {
         public NewsImageRepository(UzTexGroupDbContext appDbContext) : base(appDbContext)
         {
+        }
     }
-}
 }
