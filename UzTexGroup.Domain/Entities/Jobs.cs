@@ -10,5 +10,5 @@ public class Jobs
     public Guid FactoryId { get; set; }
     public Factory Factory { get; set; }
 
-    public ICollection<Application> Applications { get; set; }
+    public ICollection<Application>? Applications { get; set; }
 }

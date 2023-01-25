@@ -8,4 +8,5 @@ public class Company
     public int ExportingCountriesCount { get; set; }
     public Guid AboutCompanyId { get; set; }
     public AboutCompanies? AboutCompany { get; set; }
+    public ICollection<Factory>? Factories { get; set; }
 }

@@ -13,6 +13,6 @@ public class Factory
     public Guid AddressId { get; set; }
 
     public Address? Address { get; set; }
-    public ICollection<FactoryImages> FactoryImages { get; set; }
-    public ICollection<Jobs> Jobs { get; set; }
+    public ICollection<FactoryImages>? FactoryImages { get; set; }
+    public ICollection<Jobs>? Jobs { get; set; }
 }
