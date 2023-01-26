@@ -1,5 +1,4 @@
-﻿using UzTexGroup.Domain.Entities;
-
+﻿using UzTexGroup.Application.Services.Processings.DataTransferObjects.AboutCompany;
 namespace UzTexGroup.Application.DataTransferObjects.Company;
 public record CompanyDto(
     Guid id,
@@ -8,4 +7,4 @@ public record CompanyDto(
     int employeeCount,
     int exportCountryCount,
     AboutCompaniesDto? aboutCompanies,
-    ICollection<Factory>? Factories);
+    ICollection<UzTexGroup.Domain.Entities.Factory>? Factories);
