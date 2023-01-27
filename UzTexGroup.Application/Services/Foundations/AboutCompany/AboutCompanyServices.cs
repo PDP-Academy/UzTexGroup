@@ -19,9 +19,11 @@ public class AboutCompanyServices : IAboutCompanyServices
         return aboutCompany;
     }
 
-    public ValueTask<AboutCompanies> ModifyUserAsync(AboutCompanies aboutCompany)
+    public async ValueTask<AboutCompanies> ModifyUserAsync(AboutCompanies aboutCompany)
     {
-        throw new NotImplementedException();
+        aboutCompany = await this.aboutCompaniesRepository.UpdateAsync(aboutCompany);
+
+        return aboutCompany;
     }
 
     public async ValueTask<AboutCompanies> RemoveUserAsync(Guid aboutCompanyId)
@@ -35,13 +37,17 @@ public class AboutCompanyServices : IAboutCompanyServices
         return abountCompany;
     }
 
-    public ValueTask<AboutCompanies> RetrieveUserByIdAsync(Guid aboutCompanyId)
+    public async ValueTask<AboutCompanies> RetrieveUserByIdAsync(Guid aboutCompanyId)
     {
-        throw new NotImplementedException();
+        var abountCompany = await this.aboutCompaniesRepository.SelectByIdAsync(aboutCompanyId);
+
+        return abountCompany;
     }
 
     public IQueryable<AboutCompanies> RetrieveUsers()
     {
-        throw new NotImplementedException();
+        var aboutCompanyUsers = this.aboutCompaniesRepository.SelectAll();
+
+        return aboutCompanyUsers;
     }
 }
