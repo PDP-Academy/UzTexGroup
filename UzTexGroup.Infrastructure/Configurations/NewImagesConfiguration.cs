@@ -4,9 +4,9 @@ using UzTexGroup.Domain.Constants;
 using UzTexGroup.Domain.Entities;
 
 namespace UzTexGroup.Infrastructure.Configurations;
-public sealed class NewImagesConfiguration : IEntityTypeConfiguration<NewImages>
+public sealed class NewImagesConfiguration : IEntityTypeConfiguration<NewsImages>
 {
-    public void Configure(EntityTypeBuilder<NewImages> builder)
+    public void Configure(EntityTypeBuilder<NewsImages> builder)
     {
         builder.ToTable(TableNames.NewImages);
 

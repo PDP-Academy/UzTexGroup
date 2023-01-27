@@ -12,7 +12,6 @@
 
   <ItemGroup>
     <Folder Include="Services\Foundations\Company\" />
-    <Folder Include="Services\Foundations\Factory\" />
     <Folder Include="Services\Foundations\FactoryImages\" />
     <Folder Include="Services\Foundations\Jobs\" />
     <Folder Include="Services\Foundations\Application\" />

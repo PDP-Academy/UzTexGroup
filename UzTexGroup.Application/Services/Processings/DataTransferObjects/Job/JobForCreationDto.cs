@@ -1,4 +1,4 @@
-﻿namespace UzTexGroup.Application.DataTransferObjects.Job;
+﻿namespace UzTexGroup.Application.Services.Processings.DataTransferObjects.Job;
 
 public record JobForCreationDto(
     string jobName,
