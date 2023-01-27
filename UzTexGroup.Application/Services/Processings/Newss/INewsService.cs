@@ -9,9 +9,9 @@ namespace UzTexGroup.Application.Services.Processings.Newss;
 
 public interface INewsService
 {
-    ValueTask<NewsDto> CreateUserAsync(NewsForCreationDto newsForCreationDto);
-    IQueryable<NewsDto> RetrieveUsers(QueryParameter queryParameter);
-    ValueTask<NewsDto> RetrieveUserByIdAsync(Guid newsId);
-    ValueTask<NewsDto> ModifyUserAsync(UserForModificationDto userForModificationDto);
-    ValueTask<NewsDto> RemoveUserAsync(Guid userId);
+    ValueTask<NewsDto> CreateNewsAsync(NewsForCreationDto newsForCreationDto);
+    IQueryable<NewsDto> RetrieveNews(QueryParameter queryParameter);
+    ValueTask<NewsDto> RetrieveNewsByIdAsync(Guid newsId);
+    ValueTask<NewsDto> ModifyNewsAsync(UserForModificationDto userForModificationDto);
+    ValueTask<NewsDto> RemoveNewsAsync(Guid userId);
 }
