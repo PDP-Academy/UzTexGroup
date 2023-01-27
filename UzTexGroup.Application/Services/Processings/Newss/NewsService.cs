@@ -1,4 +1,5 @@
-﻿using UzTexGroup.Domain.Entities;
+﻿using UzTexGroup.Application.Services.Processings.DataTransferObjects.News;
+using UzTexGroup.Domain.Entities;
 using UzTexGroup.Domain.Exceptions;
 using UzTexGroup.Infrastructure.Repositories;
 
@@ -13,9 +14,9 @@ public class NewsService : INewsService
         this.newsRepository = newsRepository;
     }
 
-    public async ValueTask<News> CreateNewsAsync(News news)
+    public async ValueTask<News> CreateNewsAsync(NewsForCreationDto newsForCreationDto)
     {
-        var createdNews = await newsRepository.InsertAsync(news);
+        var createdNews = await newsRepository.InsertAsync();
         return createdNews;
     }
 
