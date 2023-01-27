@@ -11,6 +11,6 @@ public class News
     public string? BodyUzC { get; set; }
     public string? BodyEn { get; set; }
     public string? BodyRu { get; set; }
-    public ICollection<NewImages>? NewImages { get; set; }
+    public ICollection<NewsImages>? NewImages { get; set; }
 
 }

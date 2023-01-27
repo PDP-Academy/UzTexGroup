@@ -1,4 +1,4 @@
-﻿namespace UzTexGroup.Application.DataTransferObjects.Factory;
+﻿namespace UzTexGroup.Application.Services.Processings.DataTransferObjects.Factory;
 
 public record FactoryForModificationDto(
     Guid factoryId,

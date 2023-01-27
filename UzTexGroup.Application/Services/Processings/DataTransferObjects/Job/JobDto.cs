@@ -1,6 +1,6 @@
-﻿using UzTexGroup.Application.DataTransferObjects.Factory;
+﻿using UzTexGroup.Application.Services.Processings.DataTransferObjects.Factory;
 
-namespace UzTexGroup.Application.DataTransferObjects.Job;
+namespace UzTexGroup.Application.Services.Processings.DataTransferObjects.Job;
 
 public record JobDto(
     Guid jobId,
