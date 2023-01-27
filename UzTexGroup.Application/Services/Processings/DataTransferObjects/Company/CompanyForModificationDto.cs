@@ -1,5 +1,6 @@
-﻿namespace UzTexGroup.Application.DataTransferObjects.Company;
+﻿namespace UzTexGroup.Application.DataTransferObjects;
 public record CompanyForModificationDto(
+    Guid companyId,
     string? companyName,
     int? employeeCount,
     int? exportingCountriesCount,

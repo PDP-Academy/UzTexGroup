@@ -2,7 +2,7 @@
 {
     public class AboutCompanies
     {
-        public Guid Id { get; set; }
+        public Guid? Id { get; set; }
         public string TitleUz { get; set; }
         public string? TitleUzC { get; set; }
         public string? TitleEn { get; set; }

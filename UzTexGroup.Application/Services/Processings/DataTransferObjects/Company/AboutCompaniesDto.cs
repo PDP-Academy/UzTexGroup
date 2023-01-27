@@ -1,6 +1,6 @@
-﻿namespace UzTexGroup.Application.DataTransferObjects.Company;
+﻿namespace UzTexGroup.Application.DataTransferObjects;
 public record AboutCompaniesDto(
-    Guid Id,
+    Guid? Id,
     string titleUz,
     string? titleUzC,
     string? titleEn,
@@ -10,4 +10,4 @@ public record AboutCompaniesDto(
     string? aboutCompanyUzC,
     string? aboutCompanyEn,
     string? aboutCompanyRu,
-    Guid companyId);
+    Guid? companyId);

@@ -1,4 +1,4 @@
-﻿namespace UzTexGroup.Application.DataTransferObjects.Company;
+﻿namespace UzTexGroup.Application.DataTransferObjects;
 public record CompanyForCreationDto(
     string companyName,
     int? employeeCount,

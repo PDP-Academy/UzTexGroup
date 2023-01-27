@@ -1,7 +1,6 @@
-﻿using UzTexGroup.Application.Services.Processings.DataTransferObjects.AboutCompany;
-namespace UzTexGroup.Application.DataTransferObjects.Company;
+﻿namespace UzTexGroup.Application.DataTransferObjects;
 public record CompanyDto(
-    Guid id,
+    Guid? id,
     string companyName,
     DateTime foundedDate,
     int employeeCount,
