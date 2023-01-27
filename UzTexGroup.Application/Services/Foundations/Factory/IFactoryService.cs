@@ -1,12 +1,14 @@
-﻿namespace UzTexGroup.Application.Services.Foundations.Factory
+﻿using UzTexGroup.Domain.Entities;
+
+namespace UzTexGroup.Application.Services.Foundations
 {
     public interface IFactoryService
     {
-        ValueTask<Domain.Entities.Factory> CreateFactoryAsync(Domain.Entities.Factory Factory);
-        IQueryable<Domain.Entities.Factory> RetrieveFactorys();
-        ValueTask<Domain.Entities.Factory> RetrieveFactoryByIdAsync(Guid FactoryId);
-        ValueTask<Domain.Entities.Factory> ModifyFactoryAsync(Domain.Entities.Factory Factory);
-        ValueTask<Domain.Entities.Factory> RemoveFactoryAsync(Domain.Entities.Factory Factory);
-        ValueTask<Domain.Entities.Factory> RetrieveByIdWithDetailsAync(Guid FactoryId);
+        ValueTask<Factory> CreateFactoryAsync(Factory Factory);
+        IQueryable<Factory> RetrieveFactorys();
+        ValueTask<Factory> RetrieveFactoryByIdAsync(Guid FactoryId);
+        ValueTask<Factory> ModifyFactoryAsync(Factory Factory);
+        ValueTask<Factory> RemoveFactoryAsync(Factory Factory);
+        ValueTask<Factory> RetrieveByIdWithDetailsAync(Guid FactoryId);
     }
 }
